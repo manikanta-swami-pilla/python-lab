@@ -53,9 +53,9 @@ def main():
     os.makedirs("data", exist_ok=True)
     filepath = "data/sample_logs.txt"
     with open(filepath, "w") as f:
-        for _ in range(1000):
+        for _ in range(100):   # ✅ changed from 1000 to 100
             f.write(generate_log_line() + "\n")
-    print(f"Generated {filepath} with 1000 log lines")
+    print(f"Generated {filepath} with 100 log lines")
 
 if __name__ == "__main__":
     main()

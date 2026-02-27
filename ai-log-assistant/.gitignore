@@ -1,0 +1,37 @@
+# Only track Python files
+# Ignore everything
+/*
+
+# But not these files...
+!*/
+!*.py
+
+# Also allow .gitignore itself
+!.gitignore
+
+# Allow README and LICENSE
+!README.md
+!LICENSE
+
+# Allow requirements.txt
+!requirements.txt
+
+# Allow config and data folders, but not their contents except .py files
+!config/
+!data/
+!config/*.py
+!data/*.py
+
+# Allow tests folder and its .py files
+!tests/
+!tests/*.py
+
+# Ignore __pycache__ and other Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Dockerfile and other non-py files
+Dockerfile/
+!Dockerfile/*.py

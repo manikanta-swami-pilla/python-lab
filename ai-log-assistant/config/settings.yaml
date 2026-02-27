@@ -1,0 +1,3 @@
+model: "llama2"
+log_source: "data\\sample_logs.txt" # Path to the log file or directory containing log files, change this to your actual log source
+alert_channel: "slack"
