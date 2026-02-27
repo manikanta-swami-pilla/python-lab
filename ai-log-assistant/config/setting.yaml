@@ -1,0 +1,3 @@
+model: "llama2"
+log_source: "data/sample_logs.txt"
+alert_channel: "slack"
