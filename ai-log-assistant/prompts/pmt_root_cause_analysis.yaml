@@ -1,0 +1,15 @@
+description: >
+  This prompt is designed for root cause analysis of logs.
+  It instructs the AI to summarize main errors,
+  suggest root causes, and recommend next steps
+  based on the provided logs.
+
+template: |
+  You are a DevOps assistant.
+  Analyze the logs:
+    1. Summarize main errors in two lines
+    2. Suggest root causes in two lines
+    3. Recommend next steps in two lines
+
+  Logs:
+  {logs}
